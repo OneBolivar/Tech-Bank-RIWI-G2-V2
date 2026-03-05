@@ -2,3 +2,9 @@
 def validar_monto(tipo_operacion):
     while True:
         monto = int(input(f"Ingrese el monto a {tipo_operacion}: "))
+        
+        if monto < 0:
+                print("Error: El monto no puede ser negativo.")
+        else:
+                print(f"Ingreso correcto del monto a {tipo_operacion}: {monto}")
+                return monto
