@@ -11,9 +11,7 @@ def menu(cuenta):
     print("3- Depositar Dinero")
     Ejecucion = int(input("Elija una opcion"))
     if Ejecucion == 1:
-
-        print("Tu Saldo es de: ", cuenta['Saldo'])
-        historial_operaciones("consultar", 0, cuenta['Saldo'])
+        print("")
     elif Ejecucion == 2:
         validar_monto("Retirar", cuenta)
     elif Ejecucion == 3:
