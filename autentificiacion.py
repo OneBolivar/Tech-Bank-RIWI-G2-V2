@@ -1,7 +1,7 @@
 
-def autentificacion (codigo):
-   if codigo =="1234":
-     print("Autentificacion")
+def autentificacion (codigo, cuenta):
+   if codigo ==cuenta['pin']:
+     print("Acceso Confirmado")
    else:
      print("Error")
 
