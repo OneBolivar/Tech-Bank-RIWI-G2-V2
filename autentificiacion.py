@@ -1,4 +1,4 @@
-from menu import menu
+
 
 def  autenticacion(cuenta):
      for i in range(3):
@@ -8,7 +8,8 @@ def  autenticacion(cuenta):
             print("*" * 40,"\n")
             intentos= int(input("¿Cuantas operaciones quieres realizar?: "))
             for i in range (intentos):
-               menu(cuenta)
+               print("aqui se debe definir funcion menu")
+   
                continuacion = int(input("\nQuieres continuar con las operaciones, 1 para si o 2 para no: \n"))
 
                if (continuacion==2): break
@@ -19,5 +20,4 @@ def  autenticacion(cuenta):
      else:
             print("Has agotado tus intentos. Acceso denegado. ")
  
-   
-                
+prueba = autenticacion(cuenta={"Pin": "1234"})  #LINEA DE CODIGO PARA PROBAR LA FUNCION DE AUTENTIFICACION, SE DEBE ELIMINAR O COMENTAR PARA QUE FUNCIONE EL PROGRAMA PRINCIPAL     
