@@ -1,5 +1,17 @@
-codigo =input("DIGITE EL PIN DE SU CUENTA: ")
-if codigo =="1234":
-   print("Autentificacion")
-else:
-   print("Error")
+from menu import menu
+
+def  autenticacion(cuenta):
+     for i in range(3):
+        pin = input("Ingrese el pin: ")
+        if pin==cuenta['Pin']:
+            print("¡Contraseña correcta! Acceso concedido.")
+            print("*" * 40,"\n")     
+            intentos= int(input("¿Cuantas operaciones quieres realizar?: "))
+            for i in range (intentos):
+               menu(cuenta)
+               continuacion = int(input("\nQuieres continuar con las operaciones, 1 para si o 2 para no: \n"))
+
+               if (continuacion==2): break
+            break
+            
+                
