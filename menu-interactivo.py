@@ -12,9 +12,9 @@ def menu(cuenta):
     Ejecucion = int(input("Elija una opcion"))
     if Ejecucion == 1:
         print("")
-        
+
     elif Ejecucion == 2:
-        print("Aqui va la logica")
+        print("Aqui va la logica ")
     elif Ejecucion == 3:
         print("Opcion invalida")
     else:
