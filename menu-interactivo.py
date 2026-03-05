@@ -12,7 +12,7 @@ def menu(cuenta):
     Ejecucion = int(input("Elija una opcion"))
     if Ejecucion == 1:
 
-        print("Tu Saldo es de: 1000$")
+        print("Tu Saldo es de: ", cuenta['Saldo'])
         historial_operaciones("consultar", 0, cuenta['Saldo'])
     elif Ejecucion == 2:
         validar_monto("Retirar", cuenta)
