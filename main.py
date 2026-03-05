@@ -1,2 +1,4 @@
-print("ESTE ES EL MAIN")
-from saludo import 
+from saludo import saludo 
+
+saludo()
+
