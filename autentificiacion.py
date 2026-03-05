@@ -5,7 +5,7 @@ def  autenticacion(cuenta):
         pin = input("Ingrese el pin: ")
         if pin==cuenta['Pin']:
             print("¡Contraseña correcta! Acceso concedido.")
-            print("*" * 40,"\n")     
+            print("*" * 40,"\n")
             intentos= int(input("¿Cuantas operaciones quieres realizar?: "))
             for i in range (intentos):
                menu(cuenta)
@@ -14,4 +14,10 @@ def  autenticacion(cuenta):
                if (continuacion==2): break
             break
             
+        elif pin !=cuenta['Pin']:
+            print("Contraseña incorrecta. Inténtalo de nuevo.")
+     else:
+            print("Has agotado tus intentos. Acceso denegado. ")
+ 
+   
                 
