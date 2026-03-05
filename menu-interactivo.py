@@ -10,3 +10,12 @@ def menu(cuenta):
     print("2- Retiro de saldo")
     print("3- Depositar Dinero")
     Ejecucion = int(input("Elija una opcion"))
+    if Ejecucion == 1:
+        print("")
+        historial_operaciones("consultar", 0, cuenta['Saldo'])
+    elif Ejecucion == 2:
+        validar_monto("Retirar", cuenta)
+    elif Ejecucion == 3:
+        validar_monto("Depositar", cuenta)
+    else:
+        print("Opcion invalida")
