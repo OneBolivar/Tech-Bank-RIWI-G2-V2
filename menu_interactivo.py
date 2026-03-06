@@ -1,7 +1,8 @@
 from registro_operaciones import historial_operaciones
 from gestion_saldo import gestionsaldo
+from retiro_dinero import retirar_dinero
 
-def menu():
+def menu(cuenta):
     print("=" * 40)
     print("                 Menu")
     print("=" * 40)
@@ -11,8 +12,9 @@ def menu():
     Ejecucion = int(input("Elija una opcion: "))
     if Ejecucion == 1:
         gestionsaldo()
+        historial_operaciones("Consulta", 0, cuenta['saldo'])
     elif Ejecucion == 2:
-        print()
+        retirar_dinero()
     elif Ejecucion == 3:
         print()
     else:
