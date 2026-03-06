@@ -1,5 +1,4 @@
 from registro_operaciones import historial_operaciones
-from 
 
 def menu(cuenta):
     print("=" * 30)
