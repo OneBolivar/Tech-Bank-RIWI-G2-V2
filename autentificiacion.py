@@ -15,7 +15,7 @@ def  autentificacion(cuenta):
                     if (continuacion==2): break
                 break
             except:
-                print("Entrada no válida. Por favor, ingresa un número entero.")
+                print("Entrada no válida. Por favor, ingresa un número valido.")
         elif pin !=cuenta['pin']:
             print("Contraseña incorrecta. Inténtalo de nuevo.")
      else:
