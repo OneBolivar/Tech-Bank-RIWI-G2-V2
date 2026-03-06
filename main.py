@@ -8,7 +8,6 @@ cuenta={
 
 saludo()
 
-codigo =input("DIGITE EL PIN DE SU CUENTA: ")
-autentificacion(codigo,cuenta)
+autentificacion(cuenta)
 
 
