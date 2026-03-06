@@ -1,4 +1,4 @@
-from historial import historial_operaciones
+from registro_operaciones import historial_operaciones
 
 def retirar_dinero(valor, cuenta):
     cuenta['Saldo']-= valor

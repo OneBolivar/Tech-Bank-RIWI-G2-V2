@@ -1,6 +1,7 @@
 from registro_operaciones import historial_operaciones
 from gestion_saldo import gestionsaldo
-from retiro_dinero import retirar_dinero
+from validacion_entrada import validar_monto
+from deposito import deposito
 
 def menu(cuenta):
     print("=" * 40)
@@ -14,8 +15,8 @@ def menu(cuenta):
         gestionsaldo()
         historial_operaciones("Consulta", 0, cuenta['saldo'])
     elif Ejecucion == 2:
-        retirar_dinero()
+        validar_monto("Retirar", cuenta)
     elif Ejecucion == 3:
-        print()
+        validar_monto("Depositar", cuenta)
     else:
         print("Opcion invalida")

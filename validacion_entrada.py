@@ -1,5 +1,5 @@
-# Se crea funcion con parametro basado en el tipo de operacion "retirar" & "depositar"
-def validar_monto(tipo_operacion):
+from deposito import deposito
+def validar_monto(tipo_operacion, cuenta):
     while True:
         try:
             monto = int(input(f"Ingrese el monto a {tipo_operacion}: "))
@@ -8,6 +8,14 @@ def validar_monto(tipo_operacion):
                     print("Error: El monto no puede ser negativo.")
             else:
                     print(f"Ingreso correcto del monto a {tipo_operacion}: {monto}")
+                    if(tipo_operacion=="Retirar"):
+                        if(validacion_limite_retiro(monto, cuenta)== True): 
+                            if (control_de_retiro(monto, cuenta) == True):
+                                break
+                    else:
+                        deposito(monto, cuenta)
+                        break
                     return monto
+
         except ValueError:
             print("ERROR! Debe ingresar un número entero")
