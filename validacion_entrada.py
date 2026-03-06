@@ -1,4 +1,6 @@
 from deposito import deposito
+from Reglas_de_Negocio import validacion_limite_retiro
+from retiro_diario import control_de_retiro
 def validar_monto(tipo_operacion, cuenta):
     while True:
         try:
