@@ -1,8 +1,8 @@
 
 def menu(cuenta):
-    print("=" * 40)
-    print("                 Menu")
-    print("=" * 40)
+    print("=" * 30)
+    print("         Menu")
+    print("=" * 30)
     print("1- Consultar Saldo")
     print("2- Retiro de saldo")
     print("3- Depositar Dinero")

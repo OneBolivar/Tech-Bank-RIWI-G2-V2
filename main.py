@@ -1,8 +1,14 @@
-from registro_operaciones import historial_operaciones, mostrar_historial
+from autentificiacion import autentificacion
+from saludo import saludo 
 
-historial_operaciones("Retirar", 200, 800)
-historial_operaciones("Consultar", 0, 800)
-historial_operaciones("Depositar", 500, 1300)
-historial_operaciones("Retirar", 100, 1200)
+cuenta={
+    'saldo':1000,
+    'pin': "1234"
+}
 
-mostrar_historial()
+saludo()
+
+codigo =input("DIGITE EL PIN DE SU CUENTA: ")
+autentificacion(codigo,cuenta)
+
+
