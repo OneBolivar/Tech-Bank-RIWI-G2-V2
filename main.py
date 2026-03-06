@@ -1,4 +1,4 @@
-print("EMPEZANDO A UNIR")
+
 from autentificiacion import autentificacion
 from saludo import saludo 
 from registro_operaciones import mostrar_historial
