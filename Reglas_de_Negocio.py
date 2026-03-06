@@ -1,8 +1,8 @@
 def validacion_limite_retiro (monto, saldo):
     while True:
-        if monto > saldo:
+        if monto > cuenta['Saldo']:
             print("Monto excede el saldo en cuenta")
-            monto = int(input("Por favor ingresa el monto a retirar nuevamente: "))
+            return False
         else: 
-            print("Monto a retirar valido")
-            break
+            return True
+            
